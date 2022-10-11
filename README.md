@@ -19,7 +19,7 @@ The goal of this project is to modify the [xv6 Operating System](https://github.
 
 ## Phase 3 (CPU Scheduling)
 * In this scheduler, processes are placed in different levels according to their priority, which is assumed in this project that there are three levels and subsequently three priorities:
-  1. Round Robin
+  1. Round Robin (RR)
   2. Last Come First Serve (LCFS)
   3. Modified Highest Response Ratio Next (MHRRN)
 * Required system calls:
@@ -29,9 +29,19 @@ The goal of this project is to modify the [xv6 Operating System](https://github.
   *  `print_info(void)`
   
 ## Phase 4 (Synchronization)
-* Implement `Counting Semaphore` with required system calls
+* Implement `Counting Semaphore` with required system calls:
+  * `sem_init(int i, int v, int init)`
+  * `sem_acquire(int i)`
+  * `sem_release(int i)`
 * Simulate `Dining Philosophers` problem with 5 philosophers by using a monitor
 
+## Phase 5 (Memory management)
+Implement a POSIX-compliant Unix system call called `mmap` that maps files or devices into memory. It is a method of memory-mapped file I/O.
+Required system calls:
+* `get_free_pages_count()`
+* `mmap(void* addr, size_t length, int prot, int flags, int fd, int offset)`
+
+Contributors: [Parnian Fazel](https://github.com/parnianf/), [Ali Akhgari](https://github.com/AliAkhgari)
 
   
 

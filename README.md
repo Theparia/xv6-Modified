@@ -41,7 +41,8 @@ Required system calls:
 * `get_free_pages_count()`
 * `mmap(void* addr, size_t length, int prot, int flags, int fd, int offset)`
 
-Contributors: [Parnian Fazel](https://github.com/parnianf/), [Ali Akhgari](https://github.com/AliAkhgari)
+<br /><br />
+**Contributors:** [Parnian Fazel](https://github.com/parnianf/), [Ali Akhgari](https://github.com/AliAkhgari)
 
   
 

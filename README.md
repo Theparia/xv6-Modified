@@ -4,9 +4,9 @@ The goal of this project is to modify the [xv6 Operating System](https://github.
 ## Phase 1 (Introduction to xv6)
 * Add names of contributors to message boot
 * Add three new keyboard shortcuts to xv6 shell:
-  1. `CTRL + T`: Swap the last two letters before the cursor
-  2. `CTRL + O`: Uppercase all letters after the marker
-  3. `CTRL + A`: Change the position of the cursor to the beginning of the line
+  * `CTRL + T`: Swap the last two letters before the cursor
+  * `CTRL + O`: Uppercase all letters after the marker
+  * `CTRL + A`: Change the position of the cursor to the beginning of the line
   
 * Design and implementation of a user-level program (`factor`)
 
@@ -19,9 +19,9 @@ The goal of this project is to modify the [xv6 Operating System](https://github.
 
 ## Phase 3 (CPU Scheduling)
 * In this scheduler, processes are placed in different levels according to their priority, which is assumed in this project that there are three levels and subsequently three priorities:
-  1. Round Robin (RR)
-  2. Last Come First Serve (LCFS)
-  3. Modified Highest Response Ratio Next (MHRRN)
+  * Level 1: Round Robin (RR)
+  * Level 2: Last Come First Serve (LCFS)
+  * Level 3: Modified Highest Response Ratio Next (MHRRN)
 * Required system calls:
   * `change_queue(int pid, int queue)`
   * `set_process_MHRRN(int pid, int MHRRN_priority)`
